@@ -1,116 +1,128 @@
 <html>
 <head>
+  <!-- Open Sans Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- Yeseva One Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 
-/* Open Sans Font */
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Need Fulfillment Homepage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    body {
+      background-color: white;
+    }
 
-/* Yeseva Font */
+    /* Header */
+    .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      background-color: #82bac4;
+      padding: 0 clamp(1rem, 3.5vw, 3.5rem);
+      height: clamp(70px, 8vw, 110px);
+      width: 100%;
+      gap: clamp(10px, 2vw, 30px);
+    }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    /* Logo */
+    .logo {
+      width: clamp(45px, 6vw, 85px);
+      height: clamp(45px, 6vw, 85px);
+      display: block;
+      flex-shrink: 0;
+    }
 
-<title>Need Fulfillment Homepage</title>
-<style>
+    /* Nav links */
+    .links {
+      list-style-type: none;
+      display: flex;
+      gap: clamp(20px, 6vw, 120px);
+      padding-left: clamp(10px, 4vw, 60px);
+      font-family: "Open Sans", sans-serif;
+      flex-shrink: 0;
+    }
 
-/* Heading */
+    .links li a {
+      color: white;
+      font-size: clamp(16px, 2.2vw, 32px);
+      text-decoration: none;
+    }
 
-.title {
-padding-top: 180px;
-align-items: center;
-text-align: center;
-}
+    /* Search box */
+    .search-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-.title h1 {
-font-family: "Yeseva";
-font-size: 80px;
-color: #006078;
-}
+    .search-box input {
+      padding-left: 16px;
+      border: 3px solid white;
+      height: clamp(36px, 4.5vw, 60px);
+      width: clamp(140px, 22vw, 380px);
+      border-radius: 30px;
+      font-size: clamp(12px, 1.4vw, 20px);
+      font-family: "Open Sans", sans-serif;
+      outline: none;
+    }
 
-/* Header */
+    /* User icon */
+    .icon {
+      width: clamp(45px, 6vw, 85px);
+      height: clamp(45px, 6vw, 85px);
+      display: block;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-.header {
-position: fixed;
-left: 0;
-top: 0;
-display: flex;
-align-items: center;
-background-color: #82bac4;
-padding: 30px 55px;
-height: 80px;
-width: 100%;
-}
+    /* Heading */
+    .title {
+      padding-top: clamp(90px, 12vw, 170px);
+      text-align: center;
+    }
 
-/* logo image */
-
-.logo {
-width: 100px;
-height: 100px;
-margin-left: -35;
-disply: block;
-}
-
-/* page links */
-
-.links {
-list-style-type: none;
-display: flex;
-gap: 100px;
-padding-left: 90px;
-font-family: "Open Sans";
-}
-
-.header li a {
-color: white;
-font-size: 30;
-list-style-type: none;
-text-decoration: none;
-display: flex;
-}
-
-/* Search box */
-
-.header input {
-padding-left: 5px;
-border: 4px solid white;
-height: 45px;
-width: 250px;
-border-radius: 20px;
-font-size: 15px;
-}
-
-.search-box {
-padding-left: 117px;
-}
-
-/* icon image */
-
-.icon {
-padding-left: 25px;
-}
-
-
-</style>
+    .title h1 {
+      font-family: "Yeseva One", serif;
+      font-size: clamp(32px, 6vw, 85px);
+      color: #006078;
+      font-weight: normal;
+    }
+  </style>
 </head>
 <body>
-<nav>
-<div class = "header">
-<ul><a href = "need_fulfillment_homepage.html"><img src = "logo-example.png" class = "logo"></a></ul>
-<div class = "links">
-<li><a href = "" class = "communities-page">Communities</a></li>
-<li><a href = "" class = "non-profit-page">Non-Profits</a></li>
-</div>
-<div class = "search-box">
-<input type = "text" placeholder = "Search here"></input>
-</div>
-<ul><a href = "signup-login-page.html"><img src = "user-icon.png" class = "icon"></a></ul>
-</div>
-</nav>
-<div class = "title">
-<h1><b>Phone A Friend</b></h1>
-</div>
+  <nav>
+    <div class="header">
+      <a href="need_fulfillment_homepage.html">
+        <img src="logo-example.png" class="logo">
+      </a>
+      <ul class="links">
+        <li><a href="">Communities</a></li>
+        <li><a href="">Non-Profits</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Search here">
+      </div>
+      <a href="signup-login-page.html">
+        <img src="user-icon.png" class="icon">
+      </a>
+    </div>
+  </nav>
+
+  <div class="title">
+    <h1>Phone A Friend</h1>
+  </div>
 </body>
 </html>
